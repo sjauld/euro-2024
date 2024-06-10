@@ -29,6 +29,8 @@
         font-family: $title-font;
         width: $about-body-width;
         color: $text-colour;
+        // Fix for contrast on mobile
+        filter: drop-shadow(1px 1px #fff);
     }
 
     .about-body-title {
