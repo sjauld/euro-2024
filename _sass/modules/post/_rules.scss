@@ -18,7 +18,8 @@
     }
 
     .post-header--jake,
-    .post-header--miles {
+    .post-header--miles,
+    .post-header--stu {
         background-size: 24px;
     }
 
@@ -53,6 +54,21 @@
             background-image: url($miles-3x);
         }
     }
+
+    .post-header--stu {
+        // Non-retina device
+       background-image: url($stu);
+
+       // Retina @2x device
+       @media only screen and (-webkit-min-device-pixel-ratio: 1.2), only screen and (min--moz-device-pixel-ratio: 1.2), only screen and (-o-min-device-pixel-ratio: 5/4), only screen and (min-device-pixel-ratio: 1.2), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.2dppx) {
+           background-image: url($stu-2x);
+       }
+
+       // Retina @3x device
+       @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min--moz-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx) {
+           background-image: url($stu-3x);
+       }
+   }
 
     .post-header-title {
         margin-bottom: 5px;
