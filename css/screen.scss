@@ -1,0 +1,24 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+$banner: '{{ site.baseurl }}/img/banner.jpg';
+$banner-2x: '{{ site.baseurl }}/img/banner@2x.jpg';
+$banner-3x: '{{ site.baseurl }}/img/banner@3x.jpg';
+$jake: '{{ site.baseurl }}/img/jake.png';
+$jake-2x: '{{ site.baseurl }}/img/jake@2x.png';
+$jake-3x: '{{ site.baseurl }}/img/jake@3x.png';
+$miles: '{{ site.baseurl }}/img/miles.png';
+$miles-2x: '{{ site.baseurl }}/img/miles@2x.png';
+$miles-3x: '{{ site.baseurl }}/img/miles@3x.png';
+$icon-location: '{{ site.baseurl }}/img/icon-location.png';
+$icon-location-2x: '{{ site.baseurl }}/img/icon-location@2x.png';
+$icon-location-3x: '{{ site.baseurl }}/img/icon-location@3x.png';
+
+@import "vendor/normalize";
+@import "utils";
+@import "variables";
+@import "base";
+@import "layout";
+@import "modules";

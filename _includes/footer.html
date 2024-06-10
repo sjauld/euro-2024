@@ -1,6 +1,11 @@
-<footer class="footer">
-  {% for item in site.data.settings.social %}
-    <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-  {% endfor %}
-  <div class="footer-description"><a href="{{ site.github.url }}/">{{ site.title }} | {{ site.description }} by {{ site.author }}</a></div>
+<footer>
+    <div class="about-wrap">
+        <section class="about">
+            <img class="about-avatar" src="{{ "/img/avatar.jpg" | prepend: site.baseurl }}" border="0" alt="[name]" />
+            <div class="about-body">
+                <p class="about-body-title">About</p>
+                <p class="about-body-description">{{ site.description }}</p>
+            </div>
+        </section>
+    </div>
 </footer>
